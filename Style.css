@@ -1,15 +1,10 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /* HERO SECTION STYLING */
 #hero {
-    background-color: #f5f5f5; /* soft gray background */
+    background-color: #f5f5f5; 
     text-align: center;
     padding: 80px 20px;
     border-bottom: 1px solid #ddd;
@@ -28,6 +23,14 @@ body {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+.hero-logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -362,80 +365,116 @@ body {
     font-size: 0.95em;
 }
 
-
+/* CONTACT SECTION STYLING */
 #contact {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  border-top: 2px solid #ddd;
-}
-
-#contact h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
+  padding: 60px 20px;
+  background-color: #fafafa;
+  border-top: 2px solid #e0e0e0;
   text-align: center;
 }
 
-#contact h3 {
-  font-size: 22px;
-  color: #555;
-  margin-top: 20px;
-}
-
-#contact ul {
-  list-style-type: none;
-  padding: 0;
+#contact h2 {
+  font-size: 2rem;
+  color: #222;
   margin-bottom: 20px;
 }
 
-#contact ul li {
-  margin: 10px 0;
+#contact h3 {
+  font-size: 1.3rem;
   color: #444;
-  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  max-width: 500px;
+  text-align: left;
+}
+
+#contact ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact ul li strong {
+  color: #111;
 }
 
 #contact ul li a {
-  color: #0066cc;
+  color: #007BFF;
   text-decoration: none;
+  font-weight: 500;
 }
 
 #contact ul li a:hover {
   text-decoration: underline;
 }
 
+/* Form Styling */
 form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
 }
 
 form label {
   display: block;
-  font-weight: bold;
-  margin: 10px 0 5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 form button {
-  padding: 10px 25px;
-  font-size: 16px;
-  background-color: #0066cc;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
-  background-color: #004d99;
+  background-color: #007bff;
+}
+
+/* Responsive Tweak */
+@media (max-width: 600px) {
+  #contact h2 {
+    font-size: 1.7rem;
+  }
+
+  form {
+    padding: 20px;
+  }
 }
 
 
@@ -444,6 +483,11 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   display: flex;
