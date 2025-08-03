@@ -8,7 +8,6 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- ✅ Full favicon support -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -18,12 +17,16 @@
 </head>
 <body id="top">
     
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+    
     <header>
         <img src="images/apple-touch-icon.png" alt="Musa Mustapha Logo" class="logo">
+        
+        <label for="theme-toggle" class="theme-switch">🌙</label>
+        
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" id="menu-icon">☰</label>
     
-        <!-- NAVIGATION SECTION -->
         <nav id="navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -42,18 +45,27 @@
     
     <main>
         
-        <!-- VOLUNTEER SECTION -->
-        <section id="volunteer">
-            <h2>Voluntary &amp; Community Engagement</h2>
-            <p>During my Industrial Training at <strong>Kainji Lake National Park</strong>, where I was part of the Planning, Research, and ICT Department, I also volunteered with the <strong>Green Bond Project</strong> — an environmental initiative focused on tree planting and ecosystem restoration in local communities.</p>
-            <p>Although the project wasn't directly tech-related, I took pride in contributing to sustainable development through active participation with the planting team. This experience highlights my dedication to community growth, my willingness to learn beyond my core field, and my drive to be part of purposeful, impact-driven work.</p>
+        <section id="volunteer" aria-labelledby="volunteer-heading">
+            <h2 id="volunteer-heading"><span>Voluntary</span> &amp; Community Engagement</h2>
+            
+            <p>
+                During my Industrial Training at <strong>Kainji Lake National Park</strong>, where I was part of the Planning, Research, and ICT Department, I also volunteered with the <strong>Green Bond Project</strong> — an environmental initiative focused on tree planting and ecosystem restoration in local communities.
+            </p>
+            
+            <p>
+                Although the project wasn't directly tech-related, I took pride in contributing to sustainable development through active participation with the planting team. This experience highlights my dedication to community growth, my willingness to learn beyond my core field, and my drive to be part of purposeful, impact-driven work.
+            </p>
         </section>
         
     </main>
-    
+        
+    <div class="page-nav">
+        <a href="education.html" class="prev-page">Previous</a>
+        <a href="interests.html" class="next-page">Next</a>
+    </div>
+        
     <a href="#top" id="backToTop" title="Back to Top">↑</a>
     
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Musa Mustapha Mohammed. All rights reserved.</p>
     </footer>

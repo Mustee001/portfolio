@@ -8,7 +8,6 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- ✅ Full favicon support -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -18,12 +17,14 @@
 </head>
 <body id="top">
     
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+    
     <header>
         <img src="images/apple-touch-icon.png" alt="Musa Mustapha Logo" class="logo">
+        <label for="theme-toggle" class="theme-switch">🌙</label>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" id="menu-icon">☰</label>
         
-        <!-- NAVIGATION SECTION -->
         <nav id="navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -41,18 +42,25 @@
     </header>
     
     <main>
-        <!-- ABOUT ME SECTION -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hey there! I'm Musa Mustapha — a proud Naija tech enthusiast on a mission to make waves in web development and cybersecurity. I enjoy building websites that don’t just function but radiate great energy. Forever curious, constantly learning, and always leveling up. Let's create something amazing together!</p>
-            <p><em>🇳🇬 "Naija no dey carry last!" — I believe in breaking limits with resilience and pride.</em></p>
+        
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading"><span>About</span> Me</h2>
+            <p>Hey there! I'm Musa Mustapha — a proud Naija tech enthusiast on a mission to make waves in web development and cybersecurity. I enjoy building websites that don’t just function but radiate great energy.</p>
+            <p>Forever curious, constantly learning, and always leveling up. Let's create something amazing together!</p>
+            <blockquote>
+                <p><em>🇳🇬 "Naija no dey carry last!" — I believe in breaking limits with resilience and pride.</em></p>
+            </blockquote>
         </section>
     
     </main>
     
+    <div class="page-nav">
+        <a href="index.html" class="prev-page">Home</a>
+        <a href="goals.html" class="next-page">Next</a>
+    </div>
+    
     <a href="#top" id="backToTop" title="Back to Top">↑</a>
     
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Musa Mustapha Mohammed. All rights reserved.</p>
     </footer>

@@ -8,7 +8,6 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- ✅ Full favicon support -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -17,13 +16,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
+        
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
     
     <header>
         <img src="images/apple-touch-icon.png" alt="Musa Mustapha Logo" class="logo">
+        
+        <label for="theme-toggle" class="theme-switch">🌙</label>
+        
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" id="menu-icon">☰</label>
         
-        <!-- NAVIGATION SECTION -->
         <nav id="navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -42,41 +45,95 @@
     
     <main>
         
-        <!-- SKILLS SECTION -->
-        <section id="skills">
-            <h2>💻 Technical Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Git &amp; GitHub</li>
-                <li>HTML &amp; CSS</li>
-                <li>Cybersecurity Fundamentals</li>
-            </ul>
-
-            <h2>🧠 Soft Skills</h2>
-            <ul>
-                <li>Communication</li>
-                <li>Critical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-                <li>Time Management</li>
-                <li>Adaptability</li>
-            </ul>
-
-            <h2>🎨 Bonus Vibes</h2>
-            <ul>
-                <li>AI Tools Navigation 🤖</li>
-                <li>Content Creation 🎥</li>
-                <li>Creative Design ✨</li>
-                <li>Graphics Design 🎨</li>
-            </ul>
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading"><span>My</span> Technical Skills</h2>
+          
+            <div class="skill-bar">
+              <div class="skill-label">
+                <span>Python</span> <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="--fill: 85%;"></div>
+              </div>
+            </div>
+          
+            <div class="skill-bar">
+              <div class="skill-label">
+                <span>Git &amp; GitHub</span> <span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="--fill: 75%;"></div>
+              </div>
+            </div>
+          
+            <div class="skill-bar">
+              <div class="skill-label">
+                <span>HTML &amp; CSS</span> <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="--fill: 90%;"></div>
+              </div>
+            </div>
+          
+            <div class="skill-bar">
+              <div class="skill-label">
+                <span>Cybersecurity Fundamentals</span> <span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-fill" style="--fill: 70%;"></div>
+              </div>
+            </div>
+          
+            <h3>🧠 Soft Skills</h3>
+            <div class="soft-skills-container">
+              <span class="soft-skill-tag">Communication</span>
+              <span class="soft-skill-tag">Critical Thinking</span>
+              <span class="soft-skill-tag">Problem Solving</span>
+              <span class="soft-skill-tag">Team Collaboration</span>
+              <span class="soft-skill-tag">Time Management</span>
+              <span class="soft-skill-tag">Adaptability</span>
+            </div>
+          
+            <h3>🎨 Bonus Vibes</h3>
+            <div class="creative-skills-grid">
+              <div class="creative-skill-item">
+                <div class="skill-icon-wrapper">
+                    <span class="skill-icon">🤖</span>
+                </div>
+                <span class="skill-label">AI Tools Navigation</span>
+              </div>
+              <div class="creative-skill-item">
+                <div class="skill-icon-wrapper">
+                    <span class="skill-icon">🎥</span>
+                </div>
+                <span class="skill-label">Content Creation</span>
+              </div>
+              <div class="creative-skill-item">
+                <div class="skill-icon-wrapper">
+                    <span class="skill-icon">✨</span>
+                </div>
+                <span class="skill-label">Creative Design</span>
+              </div>
+              <div class="creative-skill-item">
+                <div class="skill-icon-wrapper">
+                    <span class="skill-icon">🎨</span>
+                </div>
+                <span class="skill-label">Graphics Design</span>
+              </div>
+            </div>
+          
             <p><strong>Field:</strong> Web Development &amp; Cybersecurity (with interest in AI/ML)</p>
         </section>
         
     </main>
     
+    <div class="page-nav">
+        <a href="goals.html" class="prev-page">Previous</a>
+        <a href="education.html" class="next-page">Next</a>
+    </div>
+    
     <a href="#top" id="backToTop" title="Back to Top">↑</a>
     
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Musa Mustapha Mohammed. All rights reserved.</p>
     </footer>

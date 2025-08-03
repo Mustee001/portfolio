@@ -8,7 +8,6 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- ✅ Full favicon support -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -17,13 +16,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
+        
+    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
     
     <header>
         <img src="images/apple-touch-icon.png" alt="Musa Mustapha Logo" class="logo">
+        
+        <label for="theme-toggle" class="theme-switch">🌙</label>
+        
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" id="menu-icon">☰</label>
         
-        <!-- NAVIGATION SECTION -->
         <nav id="navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -40,39 +43,41 @@
         </nav>
     </header>
     <main>
-        
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <p>Below are some of the key projects I’ve developed or contributed to, along with brief descriptions and GitHub links.</p>
-
-                <div class="project">
-                    <h3>Geospatial Pathfinder System</h3>
-                    <p>A command-line application that calculates the shortest route between two points using road network data. Built with GeoPandas and NetworkX, it utilizes the Breadth-First Search (BFS) algorithm for efficient pathfinding.</p>
-                    <a href="https://github.com/Mustee001/main_project" target="_blank" class="btn" aria-label="Geospatial Pathfinder GitHub">View on GitHub</a>
-                </div>
-
-                <div class="project">
-                    <h3>Password Manager App <span>(In Development)</span></h3>
-                    <p>A secure desktop-based password manager built with Python. It supports encrypted password storage using Fernet, a copy-to-clipboard feature, and both random and custom password generation. Currently in development, with plans to evolve into a full SaaS solution.</p>
-                    <a href="https://github.com/Mustee001/password_manager" target="_blank" class="btn" aria-label="Password Manager GitHub">View on GitHub</a>
-                </div>
                 
-                <div class="project">
-                    <h3>My Portfolio Website</h3>
-                    <p>This is the website you're currently viewing — a personal portfolio built with HTML, CSS, and hosted on Netlify. It showcases my skills, projects, and contact information in one place.</p>
-                   <a href="https://github.com/Mustee001/portfolio" target="_blank" class="btn" aria-label="My Portfolio GitHub">View on GitHub</a>
-                   <a href="https://mustee-rootedx0-portfolio.netlify.app" target="_blank" class="btn">Visit Live Site</a>
-                </div>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading"><span>My</span> Projects</h2>
+            <p>Below are some of the key projects I’ve developed or contributed to, along with brief descriptions and GitHub links.</p>
+    
+            <div class="project">
+                <h3>Geospatial Pathfinder System</h3>
+                <p>A command-line application that calculates the shortest route between two points using road network data. Built with GeoPandas and NetworkX, it utilizes the Breadth-First Search (BFS) algorithm for efficient pathfinding.</p>
+                <a href="https://github.com/Mustee001/main_project" target="_blank" class="btn" aria-label="View Geospatial Pathfinder System on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+    
+            <div class="project">
+                <h3>Password Manager App <span>(In Development)</span></h3>
+                <p>A secure desktop-based password manager built with Python. It supports encrypted password storage using Fernet, a copy-to-clipboard feature, and both random and custom password generation. Currently in development, with plans to evolve into a full SaaS solution.</p>
+                <a href="https://github.com/Mustee001/password_manager" target="_blank" class="btn" aria-label="View Password Manager App on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+                
+            </div>
+    
+            <div class="project">
+                <h3>My Portfolio Website</h3>
+                <p>This is the website you're currently viewing — a personal portfolio built with HTML, CSS, and hosted on Netlify. It showcases my skills, projects, and contact information in one place.</p>
+                <a href="https://github.com/Mustee001/portfolio" target="_blank" class="btn" aria-label="View Portfolio Website Source Code on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+                <a href="https://mustee-rootedx0-portfolio.netlify.app" target="_blank" class="btn" aria-label="Visit Live Portfolio Site">Visit Live Site <span aria-hidden="true">↗</span></a>
             </div>
         </section>
 
     </main>
+        
+    <div class="page-nav">
+        <a href="interests.html" class="prev-page">Previous</a>
+        <a href="testimonials.html" class="next-page">Next</a>
+    </div>
     
     <a href="#top" id="backToTop" title="Back to Top">↑</a>
     
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Musa Mustapha Mohammed. All rights reserved.</p>
     </footer>
