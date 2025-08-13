@@ -1253,7 +1253,7 @@ h2 span {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   padding: 0.8rem 0;
   max-width: 800px;
   border-top: 1px solid var(--accent-blue-light);
